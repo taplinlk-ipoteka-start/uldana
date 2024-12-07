@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Oswald", sans-serif;
 
 }
 
@@ -20,14 +20,16 @@ header {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background: linear-gradient(135deg, #007bff, #003366);
     color: #fff;
-    border-bottom: 2px solid #007bff;
     padding: 30px 0;
     position: relative;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: 100vh; /* Высота равна высоте экрана */
+
+    /*меняем эти 2 */
+    background: linear-gradient(135deg, #2F2F2F, #1A1A1A);  
+    border-bottom: 2px solid #2F2F2F;
 
 }
 
@@ -56,7 +58,10 @@ header {
 }
 
 .header-text span {
-    color: #ffe600;
+        /*меняем эту 1 */
+
+    color: #C0A080;
+
 }
 
 .header-text p {
@@ -69,19 +74,27 @@ header {
 header button {
     padding: 12px 35px;
     font-size: 1.0rem;
-    background-color: #ffe600;
-    color: #003366;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    
+    /*меняем эту 2 */
+
+    background-color: #C0A080;
+    color: #1A1A1A;
 }
 
 header button:hover {
-    background-color: #ffd700;
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+        /*меняем эту 1 */
+
+    background-color: #A8907A;
+
+
 }
 
 /* Анимация для плавного появления контента */
@@ -148,8 +161,11 @@ header button:hover {
     width: 250px;
     height: 250px;
     object-fit: cover; /* Обеспечиваем пропорции */
-    border: 3px solid #007bff; /* Цвет обводки */
     transition: transform 0.3s ease;
+
+    
+/* Цвет обводки меняем*/
+    border: 3px solid #2F2F2F;
 }
 
 .author img:hover {
@@ -202,7 +218,7 @@ header button:hover {
 .dubai-text {
     font-size: 1.5rem; /* Размер шрифта */
     font-weight: bold; /* Жирный шрифт */
-    color: #003366; /* Темно-синий цвет, соответствующий общей стилистике */
+    color: #2F2F2F; /* Темно-синий цвет, соответствующий общей стилистике */
     text-transform: uppercase; /* Верхний регистр для выразительности */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень для выделения */
     letter-spacing: 1px; /* Увеличение межбуквенного интервала */
@@ -210,7 +226,7 @@ header button:hover {
 }
 
 .dubai-text strong {
-    color: #007bff; /* Синий для выделенного текста */
+    color: #A8907A; /* Синий для выделенного текста */
     text-decoration: underline; /* Подчеркивание для выделенного текста */
 }
 
@@ -223,8 +239,11 @@ header button:hover {
 .separator {
     width: 100%;
     height: 2px;
-    background-color: #007bff; /* Цвет, который гармонирует с сайтом */
     margin: 40px 0; /* Отступы сверху и снизу для разделения секций */
+
+/* меняем 1*/
+
+    background-color: #2F2F2F;
 }
 
 /* Основные стили */
@@ -260,17 +279,20 @@ header button:hover {
 .module h3 {
     margin: 0;
     padding: 15px 20px;
-    background: #007bff;
     color: white;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: background 0.3s ease;
+
+/* меняем тут 1*/
+    background: #2F2F2F;
 }
 
 .module h3:hover {
-    background: #0056b3;
+    /* меняем тут*/
+    background: #1A1A1A;
 }
 
 .module .arrow {
@@ -301,6 +323,10 @@ header button:hover {
     margin: 10px 0;
     padding: 0;
     list-style: none;
+
+    
+
+
 }
 
 .module .content ul li {
@@ -314,16 +340,17 @@ header button:hover {
     content: '•';
     position: absolute;
     left: 0;
-    color: #007bff;
     font-size: 1.2em;
     line-height: 1;
+
+    /* меняем тут*/
+    color: #2F2F2F;
 }
 
 
 /* Стили для секции покупки */
 #purchase {
     padding: 40px 20px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
     color: #fff;
     text-align: center;
     border-radius: 10px;
@@ -331,6 +358,11 @@ header button:hover {
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeInUp 1s ease-out;
+
+    /*меняем тут*/
+    background: linear-gradient(135deg, #2F2F2F, #1A1A1A);
+
+
 }
 
 #purchase h2 {
@@ -362,7 +394,11 @@ header button:hover {
 .new-price {
     font-size: 2em;
     font-weight: bold;
-    color: #ffe600;
+   
+    /* меням тут*/    
+    color: #C0A080;
+
+
 }
 
 .discount {
@@ -380,7 +416,6 @@ header button:hover {
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: bold;
-    color: #007bff;
     background: #ffffff;
     border: none;
     border-radius: 5px;
@@ -389,6 +424,11 @@ header button:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+
+
+    /*тут меняем*/
+    color: #2F2F2F;  /* Изменяем только этот цвет */
+
 }
 
 /* Анимация при наведении */
@@ -448,7 +488,6 @@ header button:hover {
 
 /*Футер */
 footer {
-    background: linear-gradient(135deg, #002b5e, #001a3d);
     color: #fff;
     padding: 40px 20px;
     text-align: center;
@@ -457,6 +496,11 @@ footer {
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
     animation: fadeInUpFooter 1s ease-out;
     position: relative;
+
+    /*меняем тут*/
+    background: linear-gradient(135deg, #2F2F2F, #1A1A1A);
+
+
 }
 
 footer p {
@@ -472,21 +516,27 @@ footer .socials {
 }
 
 footer .socials a {
-    color: #ffe600;
     font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
     padding: 8px 16px;
-    border: 2px solid #ffe600;
     border-radius: 5px;
     transition: all 0.3s ease;
+
+    /* меняем тут*/
+    color: #C0A080;
+    border: 2px solid #C0A080;
 }
 
 footer .socials a:hover {
-    color: #002b5e;
-    background: #ffe600;
+
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(255, 230, 0, 0.5);
+
+    /*тут меняем*/
+    color: #1A1A1A;
+    background: #C0A080;
+
 }
 
 /* Добавление декоративного элемента сверху футера */
@@ -498,9 +548,11 @@ footer::before {
     transform: translateX(-50%);
     width: 80px;
     height: 6px;
-    background: #ffe600;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    /*тут меняем*/
+    background: #C0A080;
 }
 
 /* Анимация */
